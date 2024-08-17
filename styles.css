@@ -1,0 +1,71 @@
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(147, 11, 11) 0%, rgb(232, 21, 21) 69%, rgb(17, 164, 22) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 2px solid #8b1515;
+}
+
+h1 {
+  color: #b71c1c;
+  font-family: "Merry Christmas", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label, p {
+  color: #2e7d32;
+}
+
+input {
+  background-color: #fafafa;
+  border: 2px solid #de2828;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: linear-gradient(135deg, #de2828, #8b1515);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(135deg, #8b1515, #de2828);
+  transform: scale(1.05);
+}
+
+#result-section {
+  margin-top: 20px;
+}
+
+#draw-button {
+  background: linear-gradient(135deg, #3ca241, #205823);
+  color: #fff;
+}
+#draw-button:hover {
+  background: linear-gradient(135deg, #205823, #3ca241);
+}
+
+#logout-button {
+  background-color: #751212;
+  border: 1px solid #b71c1c;
+}/*# sourceMappingURL=styles.css.map */

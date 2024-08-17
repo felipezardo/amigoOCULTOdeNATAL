@@ -1,0 +1,80 @@
+$primary-color: #b71c1c; // Vermelho natalino
+$secondary-color: #2e7d32; // Verde natalino
+$background-gradient: linear-gradient(180deg, rgba(147,11,11,1) 0%, rgba(232,21,21,1) 69%, rgba(17,164,22,1) 100%); // Gradiente de vermelho e verde
+$container-bg: rgba(255, 255, 255, 0.85); // Fundo semitransparente
+$input-bg: #fafafa; // Fundo dos inputs
+$font-family: 'Georgia', serif;
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $background-gradient;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: $container-bg;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 2px solid darken($primary-color, 10%);
+}
+
+h1 {
+    color: $primary-color;
+    font-family: 'Merry Christmas', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label, p {
+    color: $secondary-color;
+}
+
+input {
+    background-color: $input-bg;
+    border: 2px solid lighten($primary-color, 10%);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: linear-gradient(135deg, lighten($primary-color, 10%), darken($primary-color, 10%));
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        background: linear-gradient(135deg, darken($primary-color, 10%), lighten($primary-color, 10%));
+        transform: scale(1.05);
+    }
+}
+
+#result-section {
+    margin-top: 20px;
+}
+
+#draw-button {
+    background: linear-gradient(135deg, lighten($secondary-color, 10%), darken($secondary-color, 10%));
+    color: #fff;
+
+    &:hover {
+        background: linear-gradient(135deg, darken($secondary-color, 10%), lighten($secondary-color, 10%));
+    }
+}
+
+#logout-button {
+    background-color: darken($primary-color, 15%);
+    border: 1px solid $primary-color;
+}

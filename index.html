@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Amigo Secreto</h1>
+        <div id="login-section">
+            <form id="login-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <div id="result-section" style="display: none;">
+            <h2>Olá, <span id="user-name"></span>!</h2>
+            <p>Você tirou: <strong id="secret-friend"></strong></p>
+            <button id="draw-button" style="display: none;">Sortear/Refazer Sorteio</button>
+            <button id="logout-button">Sair</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
